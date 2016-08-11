@@ -1,2 +1,3 @@
-# ProjetFinal
-Repositoire concernant le projet final sur l'application Clinique365
+# Clinique365
+
+Projet final, realisation d'une application mobile pour clinique
