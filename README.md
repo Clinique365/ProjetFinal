@@ -17,3 +17,10 @@ Projet final, realisation d'une application mobile pour clinique
 * [ ]  Drug order
        * [ ] share the drug order with the patient(mail, sms, etc..)    
 * [ ]  Can logout
+
++## WireFrame 
+
+Here's the WireFrame of implemented user stories:
+Please click to see [WireFrame](http://htmlpreview.github.io/?https://github.com/Clinique365/ProjetFinal/blob/master/WireFrame/index.html) 
+
+WireFrame created with [Pencil]
