@@ -6,6 +6,8 @@ Projet final, realisation d'une application mobile pour clinique
 * [ ]  The user can register and login to access the application
 * [ ]  Register a new patient
        * [ ] Fullname, profile picture, sexe, etc..
+* [ ]  Update information of a patient
+* [ ]  Delete a patient
 * [ ]  View a list of patient
 * [ ]  Make visit
        * [ ] Date of visit, ID patient, Symptoms, etc...
@@ -14,3 +16,4 @@ Projet final, realisation d'une application mobile pour clinique
        * [ ] share the lab order with the patient(mail, sms, etc..)
 * [ ]  Drug order
        * [ ] share the drug order with the patient(mail, sms, etc..)    
+* [ ]  Can logout
