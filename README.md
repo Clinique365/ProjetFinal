@@ -9,6 +9,8 @@ Projet final, realisation d'une application mobile pour clinique
 * [ ]  View a list of patient
 * [ ]  Make visit
        * [ ] Date of visit, ID patient, Symptoms, etc...
+       * [ ] Receive a notification for new visit
 * [ ]  Lab order
+       * [ ] share the lab order with the patient(mail, sms, etc..)
 * [ ]  Drug order
-    
+       * [ ] share the drug order with the patient(mail, sms, etc..)    
