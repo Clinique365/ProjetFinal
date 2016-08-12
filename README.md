@@ -21,6 +21,6 @@ Projet final, realisation d'une application mobile pour clinique
 ## WireFrame 
 
 Here's the WireFrame of implemented user stories:
-Please click to see [WireFrame](http://htmlpreview.github.io/?https://github.com/Clinique365/ProjetFinal/blob/master/WireFrame/index.html) 
+Please click to see [WireFrame](http://htmlpreview.github.io/?https://github.com/Clinique365/ProjetFinal/blob/master/Wireframe/index.html) 
 
-WireFrame created with [Pencil]
+WireFrame created with Pencil
