@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/log">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nom"
+        android:id="@+id/tvFirstname"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="57dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="25dp"
+        android:textSize="15sp"
+        android:textColor="#9df9f3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Prenom"
+        android:id="@+id/tvLastname"
+        android:layout_below="@+id/tvFirstname"
+        android:layout_alignLeft="@+id/tvFirstname"
+        android:layout_alignStart="@+id/tvFirstname"
+        android:layout_marginTop="25dp"
+        android:textSize="15sp"
+        android:textColor="#9df9f3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Clinique"
+        android:id="@+id/tvClinic"
+        android:layout_below="@+id/tvLastname"
+        android:layout_alignLeft="@+id/tvLastname"
+        android:layout_alignStart="@+id/tvLastname"
+        android:layout_marginTop="25dp"
+        android:textSize="15sp"
+        android:textColor="#9df9f3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Email"
+        android:id="@+id/tvEmail"
+        android:layout_below="@+id/tvClinic"
+        android:layout_alignLeft="@+id/tvClinic"
+        android:layout_alignStart="@+id/tvClinic"
+        android:layout_marginTop="25dp"
+        android:textSize="15sp"
+        android:textColor="#9df9f3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mot de passe"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/tvEmail"
+        android:layout_alignLeft="@+id/tvEmail"
+        android:layout_alignStart="@+id/tvEmail"
+        android:layout_marginTop="25dp"
+        android:textSize="15sp"
+        android:textColor="#9df9f3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmer "
+        android:id="@+id/tvConfirmPass"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="25dp"
+        android:textSize="15sp"
+        android:textColor="#9df9f3" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_ok"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="48dp"
+        android:layout_marginEnd="48dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:id="@+id/edtName"
+            android:hint="Joseph"
+            android:textColor="#9df9f3" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/edtFirstName"
+            android:hint="Seth-Jetro"
+            android:textColor="#9df9f3" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtClinic"
+            android:hint="Sante +" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/edtEmail"
+            android:hint="jsethjetro@gmail.com" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/edtPassword"
+            android:hint="********" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:hint="*******" />
+    </LinearLayout>
+
+
+</RelativeLayout>
