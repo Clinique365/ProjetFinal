@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/log">
+    android:background="@drawable/background_main">
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,8 +15,8 @@
         android:layout_marginLeft="57dp"
         android:layout_marginStart="57dp"
         android:layout_marginTop="25dp"
-        android:textSize="15sp"
-        android:textColor="#9df9f3" />
+        android:textSize="20sp"
+        android:textColor="#2d65f4" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,8 +28,8 @@
         android:layout_alignLeft="@+id/tvFirstname"
         android:layout_alignStart="@+id/tvFirstname"
         android:layout_marginTop="25dp"
-        android:textSize="15sp"
-        android:textColor="#9df9f3" />
+        android:textSize="20sp"
+        android:textColor="#2d65f4" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -41,8 +41,8 @@
         android:layout_alignLeft="@+id/tvLastname"
         android:layout_alignStart="@+id/tvLastname"
         android:layout_marginTop="25dp"
-        android:textSize="15sp"
-        android:textColor="#9df9f3" />
+        android:textSize="20sp"
+        android:textColor="#2d65f4" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -54,8 +54,8 @@
         android:layout_alignLeft="@+id/tvClinic"
         android:layout_alignStart="@+id/tvClinic"
         android:layout_marginTop="25dp"
-        android:textSize="15sp"
-        android:textColor="#9df9f3" />
+        android:textSize="20sp"
+        android:textColor="#2d65f4" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -67,8 +67,8 @@
         android:layout_alignLeft="@+id/tvEmail"
         android:layout_alignStart="@+id/tvEmail"
         android:layout_marginTop="25dp"
-        android:textSize="15sp"
-        android:textColor="#9df9f3" />
+        android:textSize="20sp"
+        android:textColor="#2d65f4" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -79,19 +79,19 @@
         android:layout_alignLeft="@+id/textView3"
         android:layout_alignStart="@+id/textView3"
         android:layout_marginTop="25dp"
-        android:textSize="15sp"
-        android:textColor="#9df9f3" />
+        android:textSize="20sp"
+        android:textColor="#2d65f4" />
 
     <ImageView
         android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
+        android:id="@+id/ivRegister"
         android:src="@drawable/ic_ok"
         android:layout_below="@+id/textView3"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="48dp"
-        android:layout_marginEnd="48dp" />
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -102,53 +102,66 @@
         android:layout_alignParentEnd="true">
 
         <EditText
-            android:layout_width="250dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:ems="10"
+            android:id="@+id/edtLastname"
+            android:hint="Joseph"
+            android:textColor="#2d65f4" />
+
+        <EditText
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:layout_marginTop="5dp"
             android:ems="10"
-            android:id="@+id/edtName"
-            android:hint="Joseph"
-            android:textColor="#9df9f3" />
-
-        <EditText
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/edtFirstName"
+            android:id="@+id/edtFirsname"
             android:hint="Seth-Jetro"
-            android:textColor="#9df9f3" />
+            android:textColor="#2d65f4" />
 
         <EditText
-            android:layout_width="250dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:id="@+id/edtClinic"
-            android:hint="Sante +" />
+            android:hint="Sante +"
+            android:textColor="#2d65f4" />
 
         <EditText
-            android:layout_width="250dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
+            android:layout_marginTop="6dp"
             android:ems="10"
             android:id="@+id/edtEmail"
-            android:hint="jsethjetro@gmail.com" />
+            android:hint="jsethjetro@gmail.com"
+            android:textColor="#2d65f4" />
 
         <EditText
-            android:layout_width="250dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
+            android:layout_marginTop="6dp"
             android:ems="10"
             android:id="@+id/edtPassword"
-            android:hint="********" />
+            android:hint="********"
+            android:textColor="#2d65f4" />
 
         <EditText
-            android:layout_width="250dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
+            android:layout_marginTop="6dp"
             android:ems="10"
-            android:id="@+id/editText"
-            android:hint="*******" />
+            android:id="@+id/edtConfirmPassword"
+            android:hint="********"
+            android:textColor="#2d65f4" />
     </LinearLayout>
 
 

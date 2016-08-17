@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/log">
+    android:background="@drawable/background_main">
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,8 +14,8 @@
         android:layout_marginLeft="56dp"
         android:layout_marginStart="56dp"
         android:layout_marginTop="48dp"
-        android:textColor="#96f4e1"
-        android:textSize="15sp" />
+        android:textColor="#2d65f4"
+        android:textSize="20sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,8 +25,8 @@
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/textView"
         android:layout_alignStart="@+id/textView"
-        android:textColor="#96f4e1"
-        android:textSize="15sp" />
+        android:textColor="#2d65f4"
+        android:textSize="20sp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -36,7 +36,8 @@
         android:id="@+id/edtEmail"
         android:layout_alignBottom="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:textColor="#96f4e1" />
+        android:textColor="#2d65f4"
+        android:textSize="20sp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -47,7 +48,8 @@
         android:layout_alignBottom="@+id/textView2"
         android:layout_alignLeft="@+id/edtEmail"
         android:layout_alignStart="@+id/edtEmail"
-        android:textColor="#96f4e1" />
+        android:textColor="#2d65f4"
+        android:textSize="20sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -57,7 +59,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="45dp"
-        android:textColor="#f42d3e"
+        android:textColor="#2d65f4"
         android:textSize="20sp" />
 
     <ImageView
