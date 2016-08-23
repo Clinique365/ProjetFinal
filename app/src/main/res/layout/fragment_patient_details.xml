@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="right"
+        android:src="@mipmap/ic_profil" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jean Kervens "
+        android:id="@+id/tvDetailName"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="35 ans"
+        android:id="@+id/tvDetailAge"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ave Martin Luther King #35"
+        android:id="@+id/tvDetailAdress"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Ordonnance"
+            android:textColor="#2d65f4"
+            android:id="@+id/btOrder"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="#2d65f4"
+            android:text="Modifier"
+            android:id="@+id/btModify"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -18,6 +18,7 @@ public class OrderActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order);
+        getSupportActionBar().setTitle("Ordonnance");
 
         //get the veiw pager adapter
         ViewPager vpPage = (ViewPager) findViewById(R.id.viewpager);
@@ -33,7 +34,7 @@ public class OrderActivity extends AppCompatActivity {
     public class OrderPageAdapter extends FragmentPagerAdapter {
 
         final int PAGE_COUNT = 2;
-        String TabTitles[] = {"Laboratoire","Prescription"};
+        String TabTitles[] = {"Laboratoire","Medicale"};
 
 
         public OrderPageAdapter(FragmentManager fm){

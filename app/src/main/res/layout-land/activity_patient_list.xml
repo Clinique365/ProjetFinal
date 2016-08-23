@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background_main">
+
+    <FrameLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/frDetails">
+
+        <fragment
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:name="com.codepath.clinique365.Fragments.PatientDetailFragment"
+            android:id="@+id/fragment2"
+            android:layout_gravity="left|top"
+            tools:layout="@layout/fragment_patient_details" />
+    </FrameLayout>
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.codepath.clinique365.Fragments.PatientListFragment"
+        android:id="@+id/fragment"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/frDetails"
+        android:layout_toStartOf="@+id/frDetails"
+        tools:layout="@layout/patient_list_fragment" />
+
+
+</RelativeLayout>
