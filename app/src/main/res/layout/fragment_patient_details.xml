@@ -16,6 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Jean Kervens "
+        android:visibility="gone"
         android:id="@+id/tvDetailName"
         android:textSize="15sp" />
 
@@ -23,6 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="35 ans"
+        android:visibility="gone"
         android:id="@+id/tvDetailAge"
         android:textSize="15sp" />
 
@@ -30,31 +32,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ave Martin Luther King #35"
+        android:visibility="gone"
         android:id="@+id/tvDetailAdress"
         android:textSize="15sp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:text="37734628"
+        android:id="@+id/tvDetailTelephone" />
+
     <LinearLayout
         android:orientation="horizontal"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="150dp">
 
         <Button
-            android:layout_width="130dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
             android:text="Ordonnance"
-            android:textColor="#2d65f4"
+            android:visibility="gone"
             android:id="@+id/btOrder"
-            android:textSize="15sp" />
+            android:background="#2d65f4"
+            android:textColor="@color/abc_primary_text_disable_only_material_dark" />
 
-        <Button
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:textColor="#2d65f4"
-            android:text="Modifier"
-            android:id="@+id/btModify"
-            android:textSize="15sp" />
     </LinearLayout>
+
 
 </LinearLayout>

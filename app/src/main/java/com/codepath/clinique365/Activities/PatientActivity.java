@@ -63,6 +63,7 @@ public class PatientActivity extends AppCompatActivity {
                 Connector.savePatient(firstnamePatient, name, sex, agePatient, adressePatient, phone, phoneContact);
                 Intent i = new Intent(getApplicationContext(), PatientListActivity.class);
                 startActivity(i);
+                finish();
             }
         });
 
@@ -91,5 +92,12 @@ public class PatientActivity extends AppCompatActivity {
         spinner.setAdapter(adapter);
 
         return spinner;
+    }
+
+    @Override
+    public void onBackPressed()
+    {
+        super.onBackPressed();
+        this.finish();
     }
 }

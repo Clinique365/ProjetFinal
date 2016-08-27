@@ -24,7 +24,7 @@ public class DrugOrderFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_drug_order, container, false);
 
         shareDrug = (ImageView) v.findViewById(R.id.ivShareDrugOrder);
-        drugOrder = (EditText) v.findViewById(R.id.edtPatientLab);
+        drugOrder = (EditText) v.findViewById(R.id.edtOrderDrug);
 
         shareDrug.setOnClickListener(new View.OnClickListener() {
             @Override

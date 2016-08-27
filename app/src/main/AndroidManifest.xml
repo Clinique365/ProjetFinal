@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.codepath.clinique365">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,18 +13,20 @@
         <activity
             android:name=".Activities.LoginActivity"
             android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".Activities.RegisterActivity" />
         <activity android:name=".Activities.HomeActivity" />
         <activity android:name=".Activities.OrderActivity" />
         <activity android:name=".Activities.PatientActivity" />
         <activity android:name=".Activities.PatientListActivity" />
-        <activity android:name=".Activities.VisitActivity"></activity>
+        <activity android:name=".Activities.VisitActivity" />
+        <activity android:name=".Activities.SplashScreenActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
