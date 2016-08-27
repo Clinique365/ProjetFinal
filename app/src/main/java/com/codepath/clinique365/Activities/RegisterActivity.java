@@ -3,9 +3,11 @@ package com.codepath.clinique365.Activities;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.codepath.clinique365.Activities.HomeActivity;
 import com.codepath.clinique365.Connector;
@@ -29,7 +31,13 @@ public class RegisterActivity extends AppCompatActivity {
 
         setupViews();
 
+    }
 
+    @Override
+    public void onBackPressed()
+    {
+        super.onBackPressed();
+        this.finish();
     }
 
     public void setupViews()
@@ -56,11 +64,11 @@ public class RegisterActivity extends AppCompatActivity {
 
 
                 Connector.saveUser(userFirstname, userLastname, userClinic, userEmail, userPassword);
-                Intent i = new Intent(getApplicationContext(), HomeActivity.class);
+                Intent i = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(i);
-
+                Toast.makeText(getApplicationContext(), "Bienvenue docteur " + userFirstname, Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
-
     }
 }

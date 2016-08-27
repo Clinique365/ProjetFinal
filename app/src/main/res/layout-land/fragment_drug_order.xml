@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:clickable="false"
+    android:background="@drawable/order">
 
 
     <ImageView
@@ -17,7 +19,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ID Patient: "
+        android:text="Nom"
         android:id="@+id/textView3"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -34,8 +36,8 @@
         android:id="@+id/edtPatientDrug"
         android:layout_alignBottom="@+id/textView3"
         android:layout_toRightOf="@+id/textView3"
-        android:textSize="20sp"
-        android:textColor="#2d65f4"/>
+        android:textSize="15sp"
+        android:hint="Ex: Junior Fequiert" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -59,7 +61,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textColor="#2d65f4"
             android:id="@+id/edtOrderDrug" />
     </LinearLayout>

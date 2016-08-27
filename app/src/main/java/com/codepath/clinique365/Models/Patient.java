@@ -20,8 +20,19 @@ public class Patient implements Serializable {
     private String age;
     private String adresse;
     private String telephone;
+    private String user;
     private String contactTelephone;
     private String profilPatient;
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+
 
 
     public String getAge() {

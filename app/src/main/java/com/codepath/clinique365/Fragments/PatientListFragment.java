@@ -11,12 +11,14 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 
 import com.astuetz.PagerSlidingTabStrip;
 import com.backendless.Backendless;
 import com.backendless.BackendlessCollection;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
+import com.backendless.persistence.BackendlessDataQuery;
 import com.codepath.clinique365.Models.Patient;
 import com.codepath.clinique365.R;
 import com.codepath.clinique365.adapter.ArrayAdapterPatient;
@@ -29,8 +31,12 @@ import java.util.Iterator;
  */
 public class PatientListFragment extends Fragment {
 
-    shareObject sharePatient;
+    ProgressBar progress;
 
+    shareObject sharePatient;
+    String idUser = Backendless.UserService.loggedInUser();
+
+    String query = "user = 4C8492B4-01E2-5457-FFBB-D23CE2EC3800";
     private ArrayList<Patient> listPatient;
     //private ArrayAdapter<Patient> patientArrayAdapter;
     private ArrayAdapterPatient patientArrayAdapter;
@@ -42,6 +48,7 @@ public class PatientListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.patient_list_fragment, container, false);
 
+        progress = (ProgressBar) v.findViewById(R.id.progressBarList);
         patientList = (ListView) v.findViewById(R.id.lvPatientList);
         listPatient = new ArrayList<>();
         //listPatient = new ArrayList<>();
@@ -60,7 +67,11 @@ public class PatientListFragment extends Fragment {
             }
         });
 
-        Backendless.Persistence.of( Patient.class).find( new AsyncCallback<BackendlessCollection<Patient>>(){
+        BackendlessDataQuery dataQuery = new BackendlessDataQuery();
+        dataQuery.setWhereClause(query);
+
+
+        Backendless.Persistence.of( Patient.class).find(new AsyncCallback<BackendlessCollection<Patient>>(){
             @Override
             public void handleResponse( BackendlessCollection<Patient> foundPatients )
             {
@@ -69,8 +80,10 @@ public class PatientListFragment extends Fragment {
                 {
                     Patient newPatient = patientIterator.next();
                     listPatient.add(newPatient);
+
                 }
                 patientArrayAdapter.notifyDataSetChanged();
+                progress.setVisibility(View.GONE);
 
             }
             @Override

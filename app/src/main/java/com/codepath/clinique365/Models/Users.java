@@ -13,14 +13,14 @@ public class Users {
     private String clinic;
     private String email;
     private String password;
-    private List<Patient> patients;
+    private List<Patient> patient;
 
     public List<Patient> getPatients() {
-        return patients;
+        return patient;
     }
 
     public void setPatients(List<Patient> patients) {
-        this.patients = patients;
+        this.patient = patients;
     }
 
 
