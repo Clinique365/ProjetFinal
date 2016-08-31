@@ -29,7 +29,7 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Ajouter patient"
+            android:text="Ajouter"
             android:id="@+id/textView4"
             android:layout_centerVertical="true"
             android:layout_alignLeft="@+id/ivAddPatient"

@@ -36,7 +36,8 @@ public class PatientListFragment extends Fragment {
     shareObject sharePatient;
     String idUser = Backendless.UserService.loggedInUser();
 
-    String query = "user = 4C8492B4-01E2-5457-FFBB-D23CE2EC3800";
+    String query = "user = '" +  idUser + "'";
+
     private ArrayList<Patient> listPatient;
     //private ArrayAdapter<Patient> patientArrayAdapter;
     private ArrayAdapterPatient patientArrayAdapter;
@@ -71,7 +72,7 @@ public class PatientListFragment extends Fragment {
         dataQuery.setWhereClause(query);
 
 
-        Backendless.Persistence.of( Patient.class).find(new AsyncCallback<BackendlessCollection<Patient>>(){
+        Backendless.Persistence.of( Patient.class).find(dataQuery, new AsyncCallback<BackendlessCollection<Patient>>(){
             @Override
             public void handleResponse( BackendlessCollection<Patient> foundPatients )
             {
@@ -89,7 +90,7 @@ public class PatientListFragment extends Fragment {
             @Override
             public void handleFault( BackendlessFault fault )
             {
-
+                progress.setVisibility(View.GONE);
             }
 
     });
