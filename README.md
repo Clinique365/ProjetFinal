@@ -28,6 +28,6 @@ WireFrame created with [Pencil]
 ## Video preview of what it does
 Here's a video of what the app make before last version
 
-<img src="https://github.com/jetprog/Clinique365/ProjetFinal/blob/master/Clinique365.gif" title="Video Preview" alt="Video Preview">
+<img src="https://github.com/Clinique365/ProjetFinal/blob/master/Clinique365.gif" title="Video Preview" alt="Video Preview">
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
