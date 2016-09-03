@@ -17,8 +17,10 @@ import com.codepath.clinique365.R;
 
 import weborb.client.ant.wdm.Views;
 
+//Home Activity
 public class HomeActivity extends AppCompatActivity {
 
+    //Variable declaration
     private ImageView order;
     private ImageView patient;
     private ImageView patientList;
@@ -43,6 +45,7 @@ public class HomeActivity extends AppCompatActivity {
         return super.onKeyDown(keyCode, event);
     }
 
+    // find view an initialize variable
     public void setupViews(){
         order = (ImageView) findViewById(R.id.ivPatientOrder);
         patient = (ImageView) findViewById(R.id.ivAddPatient);
@@ -83,12 +86,15 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
+
+    //inflate menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_home, menu);
         return true;
     }
 
+    //set event on menu item click
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle presses on the action bar items
@@ -101,6 +107,7 @@ public class HomeActivity extends AppCompatActivity {
         }
     }
 
+    //disconnect user
     public void logout()
     {
         Backendless.UserService.logout(new AsyncCallback<Void>() {

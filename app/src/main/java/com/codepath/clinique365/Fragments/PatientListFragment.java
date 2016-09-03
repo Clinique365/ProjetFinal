@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -19,6 +20,8 @@ import com.backendless.BackendlessCollection;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
 import com.backendless.persistence.BackendlessDataQuery;
+import com.codepath.clinique365.Activities.HomeActivity;
+import com.codepath.clinique365.Activities.PatientActivity;
 import com.codepath.clinique365.Models.Patient;
 import com.codepath.clinique365.R;
 import com.codepath.clinique365.adapter.ArrayAdapterPatient;
@@ -112,9 +115,8 @@ public class PatientListFragment extends Fragment {
         catch (ClassCastException e){
             e.printStackTrace();
         }
-
-
     }
+
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {

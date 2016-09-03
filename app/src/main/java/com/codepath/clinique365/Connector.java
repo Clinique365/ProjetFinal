@@ -19,6 +19,7 @@ import java.util.Date;
 public class Connector extends AppCompatActivity {
 
 
+    //Static metheod to save a new user for the app
     public static void saveUser(String firstname, String lastname, String clinic, String email, String password)
     {
         BackendlessUser user = new BackendlessUser();
@@ -28,7 +29,7 @@ public class Connector extends AppCompatActivity {
         user.setPassword(password);
         user.setEmail(email);
 
-
+        //Backendless api for save a user
         Backendless.UserService.register( user, new AsyncCallback<BackendlessUser>() {
             @Override
             public void handleResponse(BackendlessUser response) {
@@ -42,6 +43,7 @@ public class Connector extends AppCompatActivity {
         });
     }
 
+    //static method to save a new Patient
     public static void savePatient(String firtsname, String lastname, String sex, String age, String adress,
                     String phone, String phoneContact)
     {
@@ -57,6 +59,7 @@ public class Connector extends AppCompatActivity {
         newPatient.setContactTelephone(phoneContact);
 
 
+        //Backendless api to save a new Patient
         Backendless.Persistence.save( newPatient, new AsyncCallback<Patient>() {
             @Override
             public void handleResponse(Patient response) {

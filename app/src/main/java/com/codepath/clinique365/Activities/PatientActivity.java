@@ -16,8 +16,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PatientActivity extends AppCompatActivity {
-    Spinner spinner;
 
+    //variable declaration
+    Spinner spinner;
     private ImageView registerPatient;
     private EditText firstname;
     private EditText lastname;
@@ -37,6 +38,7 @@ public class PatientActivity extends AppCompatActivity {
     }
 
 
+    //find view an initialize variable
     public void setupViews(){
         firstname = (EditText) findViewById(R.id.edtfirstnamePatient);
         lastname = (EditText) findViewById(R.id.edtlastnamePatient);
@@ -47,6 +49,7 @@ public class PatientActivity extends AppCompatActivity {
         phoneNumberContact = (EditText) findViewById(R.id.edtPhoneContact);
         registerPatient = (ImageView) findViewById(R.id.ivNewPatient);
 
+        //set on click event to register a new patient
         registerPatient.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,7 +62,7 @@ public class PatientActivity extends AppCompatActivity {
                 String phone = phoneNumber.getText().toString();
                 String phoneContact = phoneNumberContact.getText().toString();
 
-
+                //call the static methode savePatient(...) from the class Connector
                 Connector.savePatient(firstnamePatient, name, sex, agePatient, adressePatient, phone, phoneContact);
                 Intent i = new Intent(getApplicationContext(), PatientListActivity.class);
                 startActivity(i);
@@ -70,6 +73,7 @@ public class PatientActivity extends AppCompatActivity {
 
     }
 
+    //put element in the spinner
     public Spinner spinner() {
         //fetch the spinner in the xml file
         spinner = (Spinner) findViewById(R.id.spinner);

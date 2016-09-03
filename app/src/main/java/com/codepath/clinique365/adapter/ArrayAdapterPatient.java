@@ -21,11 +21,13 @@ import java.util.List;
  */
 public class ArrayAdapterPatient extends ArrayAdapter<Patient> {
 
+    //constructor
     public ArrayAdapterPatient(Context context, ArrayList<Patient> patients)
     {
         super(context, android.R.layout.simple_list_item_1, patients);
     }
 
+    //custom view to populate data
    @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 

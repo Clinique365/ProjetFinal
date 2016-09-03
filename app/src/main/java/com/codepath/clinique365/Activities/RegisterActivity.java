@@ -15,8 +15,8 @@ import com.codepath.clinique365.R;
 
 public class RegisterActivity extends AppCompatActivity {
 
+    //variable declaration
     private ImageView register;
-
     private EditText lastname;
     private EditText firstname;
     private EditText clinic;
@@ -40,6 +40,7 @@ public class RegisterActivity extends AppCompatActivity {
         this.finish();
     }
 
+    //find view by ID
     public void setupViews()
     {
 
@@ -52,6 +53,7 @@ public class RegisterActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.edtPassword);
 
 
+        //set event on click to register a new user for the app
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,6 +65,7 @@ public class RegisterActivity extends AppCompatActivity {
                 String userPassword = password.getText().toString();
 
 
+                //static method saveUser(...) from the class Connector for save a new user
                 Connector.saveUser(userFirstname, userLastname, userClinic, userEmail, userPassword);
                 Intent i = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(i);

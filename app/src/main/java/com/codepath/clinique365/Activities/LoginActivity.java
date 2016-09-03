@@ -18,6 +18,7 @@ import com.codepath.clinique365.R;
 
 public class LoginActivity extends AppCompatActivity {
 
+    //variable declaration
     private ProgressBar progress;
 
     public static final String APP_ID = "272A47E2-AABF-E5EE-FFD1-DDBCDF73C100" ;
@@ -49,6 +50,7 @@ public class LoginActivity extends AppCompatActivity {
         this.finish();
     }
 
+    //find view
     public void setupViews(){
         register = (TextView) findViewById(R.id.tvRegister);
         login = (ImageView) findViewById(R.id.ivLogin);
@@ -56,6 +58,7 @@ public class LoginActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.edtPassword);
         progress = (ProgressBar) findViewById(R.id.progressBar);
 
+        //set event on click for register a new user
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -64,6 +67,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        //set event to connect a user an use the app
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,6 +75,7 @@ public class LoginActivity extends AppCompatActivity {
                 String userPassword = password.getText().toString();
                 progress.setVisibility(View.VISIBLE);
 
+                //use the backendless login api
                 Backendless.UserService.login(userMail, userPassword, new AsyncCallback<BackendlessUser>() {
                     @Override
                     public void handleResponse(BackendlessUser response) {
